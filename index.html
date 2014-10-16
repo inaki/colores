@@ -42,7 +42,7 @@
         <h3>{{palette.title}}</h3>
         <div class="row">
           <div class="box" ng-repeat="color in palette.colorArray">
-            <div clip-click="doSomething()" clip-copy="color[radioModel]" ng-style="{'background-color': color[1]}" ng-model="black" class="color-box" >
+            <div clip-click="doSomething(radioModel)" clip-copy="color[radioModel]" ng-style="{'background-color': color[1]}" ng-model="black" class="color-box" >
               <span ng-class="{oscurita: changeColor(color[1])}"}>
                     {{ color[radioModel] }}
               </span>

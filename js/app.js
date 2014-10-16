@@ -18,7 +18,8 @@ angular.module('colorApp', ['ui.bootstrap', 'ngClipboard'])
       };
 
       $scope.doSomething = function(valor){
-        alert("este es el color que clikeaste " + valor);
+        setTimeout(function(){alert("este es el color que clikeaste " + valor)}, 3000);
+        
       };
 
       // $scope.fallback = function(copy) {
